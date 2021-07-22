@@ -24,7 +24,10 @@ class QuillaAzure:
             help='A command to deal with images stored in azure blob storage'
         )
         az_subparsers = parser.add_subparsers()
-        download_parser = az_subparsers.add_parser('download', help='download help')
+        download_parser = az_subparsers.add_parser(
+            'download',
+            help='Downloads all images associated with a run ID'
+        )
 
         download_parser.add_argument(
             'run_id',
