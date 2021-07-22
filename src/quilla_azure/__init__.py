@@ -43,7 +43,7 @@ class QuillaAzure:
             args.container_name,
         )
 
-        self.run_id = ctx.run_id
+        self.run_id = args.run_id
 
     def get_images(self):
         if self.container_client is None:
